@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Code\MainApp.cpp" />
+    <ClCompile Include="..\Code\Terrain.cpp" />
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="..\Code\StageCoachHero.cpp" />
+    <ClCompile Include="..\Code\Village.cpp">
+      <Filter>00. Scene\03. Village</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Creature.cpp">
+      <Filter>01. GameObject\01. Creature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\BoneCourtier.cpp">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\BoneDefender.cpp">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\BoneSoldier.cpp">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\BrigandBloodletter.cpp">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\BrigandCutthroat.cpp">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\BrigandFusilier.cpp">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Hero.cpp">
+      <Filter>01. GameObject\01. Creature\00. Hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Weald_Curio_Chest.cpp">
+      <Filter>01. GameObject\02 InteractionObj\00. Weald Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Weald_Curio_Luggage.cpp">
+      <Filter>01. GameObject\02 InteractionObj\00. Weald Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Weald_Curio_Spider.cpp">
+      <Filter>01. GameObject\02 InteractionObj\00. Weald Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Weald_Curio_Tent.cpp">
+      <Filter>01. GameObject\02 InteractionObj\00. Weald Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\WealdDungeonDoor.cpp">
+      <Filter>01. GameObject\02 InteractionObj\00. Weald Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Weald_Obstacle.cpp">
+      <Filter>01. GameObject\02 InteractionObj\00. Weald Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Weald_Trap.cpp">
+      <Filter>01. GameObject\02 InteractionObj\00. Weald Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Monster.cpp">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\ShieldBreaker.cpp">
+      <Filter>01. GameObject\01. Creature\00. Hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Vestal.cpp">
+      <Filter>01. GameObject\01. Creature\00. Hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Weald_Dungeon.cpp">
+      <Filter>00. Scene\02. Weald Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Highwayman.cpp">
+      <Filter>01. GameObject\01. Creature\00. Hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Jester.cpp">
+      <Filter>01. GameObject\01. Creature\00. Hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\EnvironmentObj.cpp">
+      <Filter>01. GameObject\04. Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\DungeonRoom.cpp">
+      <Filter>01. GameObject\06. Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\DungeonSystem.cpp">
+      <Filter>01. GameObject\06. Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\DynamicCamera.cpp">
+      <Filter>01. GameObject\05. Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\PlayerHand.cpp">
+      <Filter>01. GameObject\00. Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Player.cpp">
+      <Filter>01. GameObject\00. Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\StaticCamera.cpp">
+      <Filter>01. GameObject\05. Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\CameraMgr.cpp">
+      <Filter>02. Manager\00. CameraMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Door.cpp">
+      <Filter>01. GameObject\02 InteractionObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\InteractionObj.cpp">
+      <Filter>01. GameObject\02 InteractionObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\PickingGame.cpp">
+      <Filter>01. GameObject\07. Minigame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\SkyBox.cpp">
+      <Filter>01. GameObject\04. Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Wall.cpp">
+      <Filter>01. GameObject\04. Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Inside.cpp">
+      <Filter>01. GameObject\04. Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Outside.cpp">
+      <Filter>01. GameObject\04. Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\BattleSystem.cpp">
+      <Filter>01. GameObject\06. Dungeon\BattleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Skill.cpp">
+      <Filter>01. GameObject\01. Creature\00. Hero\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Item.cpp">
+      <Filter>01. GameObject\08. Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Tervarn.cpp" />
+    <ClCompile Include="..\Code\Gambling.cpp">
+      <Filter>01. GameObject\02 InteractionObj\01. Village</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Guild.cpp">
+      <Filter>01. GameObject\02 InteractionObj\01. Village</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\GuildNPC.cpp">
+      <Filter>01. GameObject\02 InteractionObj\01. Village</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\TavernNPC.cpp">
+      <Filter>01. GameObject\02 InteractionObj\01. Village</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\SoundMgr.cpp">
+      <Filter>02. Manager\01. SoundMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\TavernUI.cpp" />
+    <ClCompile Include="..\Code\BattleHeroUI.cpp">
+      <Filter>01. GameObject\03. UI\00. BattleHeroUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\GoodsUI.cpp">
+      <Filter>01. GameObject\03. UI\01. GoodsUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\HeroSkillUI.cpp">
+      <Filter>01. GameObject\03. UI\02. HeroSkillUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\HeroStat.cpp">
+      <Filter>01. GameObject\03. UI\03. HeroStat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Inventory.cpp">
+      <Filter>01. GameObject\03. UI\04. Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\StatView.cpp">
+      <Filter>01. GameObject\03. UI\05. StatView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Narration.cpp">
+      <Filter>01. GameObject\03. UI\06. Narration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Loading.cpp">
+      <Filter>00. Scene\00. Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Ruin_Dungeon.cpp">
+      <Filter>00. Scene\03. Ruin Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\RuinDungeonDoor.cpp">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Ruin_Obstacle.cpp">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Ruin_Trap.cpp">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Ruin_Curio_Armor.cpp">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Ruin_Curio_Fountain.cpp">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Ruin_Curio_Sarcophagus.cpp">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Ruin_Curio_Sconce.cpp">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\MainLogo.cpp">
+      <Filter>00. Scene\01. MainLogo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\BackGround.cpp">
+      <Filter>00. Scene\01. MainLogo\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\BossMap.cpp">
+      <Filter>00. Scene\04. BossMap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\PlayerProj.cpp">
+      <Filter>01. GameObject\10. Projectile\00. PlrProj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Bullet2.cpp">
+      <Filter>01. GameObject\10. Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Bullet1.cpp">
+      <Filter>01. GameObject\10. Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Laser.cpp">
+      <Filter>01. GameObject\10. Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\MouseCursor.cpp">
+      <Filter>01. GameObject\03. UI\08. MouseCursor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Description.cpp">
+      <Filter>01. GameObject\03. UI\10. Desription</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\PlayerFPSUI.cpp">
+      <Filter>01. GameObject\03. UI\11. PlayerFPSUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\LoadingScreen.cpp">
+      <Filter>00. Scene\05. LoadingScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\LoadingBack.cpp">
+      <Filter>00. Scene\05. LoadingScreen\LoadingBackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Trigger.cpp">
+      <Filter>01. GameObject\04. Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\InteractionInfo.cpp">
+      <Filter>01. GameObject\03. UI\12. InteractionInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Ruin_Curio_Statue.cpp">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\PuzzleHint.cpp">
+      <Filter>01. GameObject\03. UI\13. PuzzleHint</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\BossRoomDoor.cpp">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\CardGame.cpp">
+      <Filter>01. GameObject\07. Minigame\00. CardGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Card.cpp">
+      <Filter>01. GameObject\07. Minigame\00. CardGame\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Boss2.cpp">
+      <Filter>01. GameObject\10. Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Mob.cpp">
+      <Filter>01. GameObject\10. Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Mob_Bullet.cpp">
+      <Filter>01. GameObject\10. Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Bullet3.cpp">
+      <Filter>01. GameObject\10. Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Sunken.cpp">
+      <Filter>01. GameObject\10. Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Spike.cpp">
+      <Filter>01. GameObject\10. Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\ScreenEffect.cpp">
+      <Filter>01. GameObject\03. UI\07. ScreenEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\DungeonStatus.cpp">
+      <Filter>01. GameObject\03. UI\14. DungeonStatus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\FireworkParticle.cpp">
+      <Filter>01. GameObject\11. Particle\FireworkParticle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Alien.cpp">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\AlienMob.cpp">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Video.cpp">
+      <Filter>00. Scene\06. Video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\SceneEvent.cpp" />
+    <ClCompile Include="..\Code\TextBoard.cpp">
+      <Filter>01. GameObject\03. UI\15. TextBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Ruin_SecretDoor.cpp">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Header\Define.h" />
+    <ClInclude Include="..\Header\MainApp.h" />
+    <ClInclude Include="..\Header\pch.h" />
+    <ClInclude Include="..\Header\Terrain.h" />
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\Header\StageCoachHero.h" />
+    <ClInclude Include="..\Header\Village.h">
+      <Filter>00. Scene\03. Village</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Creature.h">
+      <Filter>01. GameObject\01. Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\BoneCourtier.h">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\BoneDefender.h">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\BoneSoldier.h">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\BrigandBloodletter.h">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\BrigandCutthroat.h">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\BrigandFusilier.h">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Hero.h">
+      <Filter>01. GameObject\01. Creature\00. Hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Weald_Curio_Chest.h">
+      <Filter>01. GameObject\02 InteractionObj\00. Weald Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Weald_Curio_Luggage.h">
+      <Filter>01. GameObject\02 InteractionObj\00. Weald Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Weald_Curio_Spider.h">
+      <Filter>01. GameObject\02 InteractionObj\00. Weald Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Weald_Curio_Tent.h">
+      <Filter>01. GameObject\02 InteractionObj\00. Weald Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\WealdDungeonDoor.h">
+      <Filter>01. GameObject\02 InteractionObj\00. Weald Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Weald_Obstacle.h">
+      <Filter>01. GameObject\02 InteractionObj\00. Weald Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Weald_Trap.h">
+      <Filter>01. GameObject\02 InteractionObj\00. Weald Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Monster.h">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\ShieldBreaker.h">
+      <Filter>01. GameObject\01. Creature\00. Hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Vestal.h">
+      <Filter>01. GameObject\01. Creature\00. Hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Weald_Dungeon.h">
+      <Filter>00. Scene\02. Weald Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Highwayman.h">
+      <Filter>01. GameObject\01. Creature\00. Hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Jester.h">
+      <Filter>01. GameObject\01. Creature\00. Hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\EnvironmentObj.h">
+      <Filter>01. GameObject\04. Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\DungeonRoom.h">
+      <Filter>01. GameObject\06. Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\DungeonSystem.h">
+      <Filter>01. GameObject\06. Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\DynamicCamera.h">
+      <Filter>01. GameObject\05. Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\PlayerHand.h">
+      <Filter>01. GameObject\00. Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Player.h">
+      <Filter>01. GameObject\00. Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\StaticCamera.h">
+      <Filter>01. GameObject\05. Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\CameraMgr.h">
+      <Filter>02. Manager\00. CameraMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Door.h">
+      <Filter>01. GameObject\02 InteractionObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\InteractionObj.h">
+      <Filter>01. GameObject\02 InteractionObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\PickingGame.h">
+      <Filter>01. GameObject\07. Minigame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\SkyBox.h">
+      <Filter>01. GameObject\04. Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Wall.h">
+      <Filter>01. GameObject\04. Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Inside.h">
+      <Filter>01. GameObject\04. Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Outside.h">
+      <Filter>01. GameObject\04. Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\BattleSystem.h">
+      <Filter>01. GameObject\06. Dungeon\BattleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Skill.h">
+      <Filter>01. GameObject\01. Creature\00. Hero\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Item.h">
+      <Filter>01. GameObject\08. Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Tervarn.h" />
+    <ClInclude Include="..\Header\TavernUI.h" />
+    <ClInclude Include="..\Header\Guild.h" />
+    <ClInclude Include="..\Header\BattleHeroUI.h">
+      <Filter>01. GameObject\03. UI\00. BattleHeroUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\GoodsUI.h">
+      <Filter>01. GameObject\03. UI\01. GoodsUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\HeroSkillUI.h">
+      <Filter>01. GameObject\03. UI\02. HeroSkillUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\HeroStat.h">
+      <Filter>01. GameObject\03. UI\03. HeroStat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Inventory.h">
+      <Filter>01. GameObject\03. UI\04. Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\StatView.h">
+      <Filter>01. GameObject\03. UI\05. StatView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Narration.h">
+      <Filter>01. GameObject\03. UI\06. Narration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Loading.h">
+      <Filter>00. Scene\00. Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Ruin_Dungeon.h">
+      <Filter>00. Scene\03. Ruin Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\RuinDungeonDoor.h">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Ruin_Obstacle.h">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Ruin_Trap.h">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Ruin_Curio_Armor.h">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Ruin_Curio_Fountain.h">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Ruin_Curio_Sarcophagus.h">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Ruin_Curio_Sconce.h">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\SoundMgr.h">
+      <Filter>02. Manager\01. SoundMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\MainLogo.h">
+      <Filter>00. Scene\01. MainLogo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\BackGround.h">
+      <Filter>00. Scene\01. MainLogo\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\PlayerProj.h">
+      <Filter>01. GameObject\10. Projectile\00. PlrProj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\BossMap.h">
+      <Filter>00. Scene\04. BossMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Bullet2.h">
+      <Filter>01. GameObject\10. Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Bullet1.h">
+      <Filter>01. GameObject\10. Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Laser.h">
+      <Filter>01. GameObject\10. Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\MouseCursor.h">
+      <Filter>01. GameObject\03. UI\08. MouseCursor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Description.h">
+      <Filter>01. GameObject\03. UI\10. Desription</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\PlayerFPSUI.h">
+      <Filter>01. GameObject\03. UI\11. PlayerFPSUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\LoadingScreen.h">
+      <Filter>00. Scene\05. LoadingScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\LoadingBack.h">
+      <Filter>00. Scene\05. LoadingScreen\LoadingBackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\TavernNPC.h">
+      <Filter>01. GameObject\02 InteractionObj\01. Village</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\GuildNPC.h">
+      <Filter>01. GameObject\02 InteractionObj\01. Village</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Trigger.h">
+      <Filter>01. GameObject\04. Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\InteractionInfo.h">
+      <Filter>01. GameObject\03. UI\12. InteractionInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Ruin_Curio_Statue.h">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\PuzzleHint.h">
+      <Filter>01. GameObject\03. UI\13. PuzzleHint</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\BossRoomDoor.h">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\CardGame.h">
+      <Filter>01. GameObject\07. Minigame\00. CardGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Card.h">
+      <Filter>01. GameObject\07. Minigame\00. CardGame\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Gambling.h">
+      <Filter>01. GameObject\02 InteractionObj\01. Village</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Mob.h">
+      <Filter>01. GameObject\10. Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Mob_Bullet.h">
+      <Filter>01. GameObject\10. Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Bullet3.h">
+      <Filter>01. GameObject\10. Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Sunken.h">
+      <Filter>01. GameObject\10. Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Spike.h">
+      <Filter>01. GameObject\10. Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Boss2.h">
+      <Filter>01. GameObject\10. Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\ScreenEffect.h">
+      <Filter>01. GameObject\03. UI\07. ScreenEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Enums.h" />
+    <ClInclude Include="..\Header\DungeonStatus.h">
+      <Filter>01. GameObject\03. UI\14. DungeonStatus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\FireworkParticle.h">
+      <Filter>01. GameObject\11. Particle\FireworkParticle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Alien.h">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\AlienMob.h">
+      <Filter>01. GameObject\01. Creature\01. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Video.h">
+      <Filter>00. Scene\06. Video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\SceneEvent.h" />
+    <ClInclude Include="..\Header\TextBoard.h">
+      <Filter>01. GameObject\03. UI\15. TextBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Ruin_SecretDoor.h">
+      <Filter>01. GameObject\02 InteractionObj\02. Ruin Dungeon</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Client.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="00. Scene">
+      <UniqueIdentifier>{ebadd4f7-5ea8-478b-82d6-a1cb34f1fd5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject">
+      <UniqueIdentifier>{a9ac03b2-3e7d-4e4e-9669-825485168745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\00. Player">
+      <UniqueIdentifier>{87432530-3f52-47d6-9013-041cb104ff83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\01. Creature">
+      <UniqueIdentifier>{379fa1f7-d62f-43a9-ab4a-bea477f4b390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\01. Creature\00. Hero">
+      <UniqueIdentifier>{6e7be53e-2519-40fb-84fd-faf4608b5aae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\01. Creature\01. Monster">
+      <UniqueIdentifier>{07d52fa3-999b-488f-83a3-3326063b227c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\02 InteractionObj">
+      <UniqueIdentifier>{c7f6e72b-a840-4d16-88c1-36c4ffb17104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\02 InteractionObj\00. Weald Dungeon">
+      <UniqueIdentifier>{fc6a17ff-89da-4ae2-912b-51c31e33c0eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\02 InteractionObj\01. Village">
+      <UniqueIdentifier>{006c3174-a372-4ce1-8403-2e5ba6d47e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI">
+      <UniqueIdentifier>{2f695c24-c5d3-40aa-a3b7-e2dabbf85030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\04. Environment">
+      <UniqueIdentifier>{8e0bd0db-1d4e-487a-99e5-e3917b310ab9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\05. Camera">
+      <UniqueIdentifier>{238ff833-3010-467f-a444-4dd4f844cf1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Manager">
+      <UniqueIdentifier>{a0e3f1b4-1b36-41bd-b4a0-5e1cf1f5a2a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Manager\00. CameraMgr">
+      <UniqueIdentifier>{a513df5c-1428-4586-8b06-102025177639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\06. Dungeon">
+      <UniqueIdentifier>{63f75b8a-5891-4302-b4bf-fbaebc754c08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\07. Minigame">
+      <UniqueIdentifier>{09c01a84-0e92-452d-9ae7-d6179067a049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\01. Creature\00. Hero\Skill">
+      <UniqueIdentifier>{25f3c12d-74cd-4996-afd0-da6915ada94c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\06. Dungeon\BattleSystem">
+      <UniqueIdentifier>{0b67cabf-8a0c-49e3-a3a5-c0aa5ed0796f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\08. Item">
+      <UniqueIdentifier>{dcc92dcd-6f44-48d2-a52f-af4d88480a9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Manager\01. SoundMgr">
+      <UniqueIdentifier>{49b410f2-745a-440a-940e-44760d6c37cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\00. BattleHeroUI">
+      <UniqueIdentifier>{d7a0c0fc-d8cc-4764-97d9-1f815c6404b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\01. GoodsUI">
+      <UniqueIdentifier>{abcabc83-415d-4163-ab0e-b4ab8996524a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\02. HeroSkillUI">
+      <UniqueIdentifier>{ba4e67ae-62f4-449e-b744-eedb64519b6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\03. HeroStat">
+      <UniqueIdentifier>{40e2fbb0-988e-4a64-a38d-7c4407a33620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\04. Inventory">
+      <UniqueIdentifier>{c24c5f6d-53bc-4468-b04a-a54e51afd5b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\05. StatView">
+      <UniqueIdentifier>{eea10a1b-72da-4589-8ecd-2e3c687bfcd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\06. Narration">
+      <UniqueIdentifier>{4585aade-a9f4-4965-9dd1-81c69f0b7fd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\07. ScreenEffect">
+      <UniqueIdentifier>{2c9df052-b357-46c2-80fc-5ed350091984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Scene\00. Loading">
+      <UniqueIdentifier>{ce5e5f90-c734-40aa-a2ed-7db05dd654a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Scene\01. MainLogo">
+      <UniqueIdentifier>{37eb56d8-ce16-4176-b805-68211dc284f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Scene\02. Weald Dungeon">
+      <UniqueIdentifier>{b0cf1a74-8448-424d-bc36-9e8e3243a42b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Scene\03. Village">
+      <UniqueIdentifier>{7a6cc157-b6f4-4651-9d94-e234ee2add51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Scene\03. Ruin Dungeon">
+      <UniqueIdentifier>{e25c682d-5f62-4009-8ed3-b2c366484de1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\02 InteractionObj\02. Ruin Dungeon">
+      <UniqueIdentifier>{2ca345ff-fac0-414e-9006-5bb89942b27a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Scene\01. MainLogo\BackGround">
+      <UniqueIdentifier>{6b3e744a-a765-4ee2-a84a-bd190043f9e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Scene\04. BossMap">
+      <UniqueIdentifier>{7ff0345d-344c-4200-b80c-517dc61e3435}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\10. Boss">
+      <UniqueIdentifier>{b7ec3dff-92bb-45e2-a7c4-0aec2adb0fd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\10. Projectile">
+      <UniqueIdentifier>{540267ba-8f2b-473b-9453-ee15ec635f7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\10. Projectile\00. PlrProj">
+      <UniqueIdentifier>{4562ee9a-16e5-467c-8320-75be9da922c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\08. MouseCursor">
+      <UniqueIdentifier>{09e96540-6667-4e01-b3b4-b1d5b98310f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\09. PlayerFPSUI">
+      <UniqueIdentifier>{da4eb816-3d63-42ec-865f-a5f97d56bab9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Scene\05. LoadingScreen">
+      <UniqueIdentifier>{b34b986f-3b23-46ed-a6f9-1a97a7ab8e12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Scene\05. LoadingScreen\LoadingBackGround">
+      <UniqueIdentifier>{c427c157-ef42-4b91-9bcd-a79071a14466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\10. Desription">
+      <UniqueIdentifier>{530af13d-d518-4abf-bd32-0fb7eac2470b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\11. PlayerFPSUI">
+      <UniqueIdentifier>{0ace0080-6773-4652-a16e-df2b6f7c3dcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\12. InteractionInfo">
+      <UniqueIdentifier>{b561b11a-63f5-4e4e-a261-9b8fe53c47b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\13. PuzzleHint">
+      <UniqueIdentifier>{26db4c70-bce6-4e69-8e21-d2006b6cf978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\07. Minigame\00. CardGame">
+      <UniqueIdentifier>{c05f430f-0fd8-4140-9514-10900915e449}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\07. Minigame\00. CardGame\Card">
+      <UniqueIdentifier>{5c48c758-e397-4a9d-b56d-4a028a9cc227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\14. DungeonStatus">
+      <UniqueIdentifier>{b2d518ec-3fb3-458c-b6bc-d606fae3133d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\11. Particle">
+      <UniqueIdentifier>{07e1280b-a4bf-4c25-8ca5-6273dc9aad49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\11. Particle\FireworkParticle">
+      <UniqueIdentifier>{09fbb5f6-f85b-4474-9b81-9d11f9de4058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. Scene\06. Video">
+      <UniqueIdentifier>{3e113a73-f7e4-44cc-b5b2-275847b84908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\12. SceneEvent">
+      <UniqueIdentifier>{03d8bd01-ba3d-4730-9630-0da4b6a6b550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameObject\03. UI\15. TextBoard">
+      <UniqueIdentifier>{02c24ea1-ef28-43ce-b831-a41f3d1b3500}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

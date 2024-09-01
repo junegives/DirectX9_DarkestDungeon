@@ -1,0 +1,45 @@
+#pragma once
+
+#include"Engine_Define.h"
+
+BEGIN(Engine)
+
+
+//
+// Util
+//
+
+#define CLAMP(value, low, high) ((value) < (low) ? (low) : ((value) > (high) ? (high) : (value)))
+
+
+std::wstring StringToWString(const std::string& str);
+std::string WStringToString(const std::wstring& wstr);
+
+//
+// Color
+//
+
+const D3DXCOLOR COLOR_WHITE(D3DCOLOR_XRGB(255, 255, 255));
+const D3DXCOLOR COLOR_BLACK(D3DCOLOR_XRGB(0, 0, 0));
+const D3DXCOLOR COLOR_GRAY(D3DCOLOR_XRGB(128, 128, 128));
+const D3DXCOLOR COLOR_RED(D3DCOLOR_XRGB(255, 0, 0));
+const D3DXCOLOR COLOR_GREEN(D3DCOLOR_XRGB(0, 255, 0));
+const D3DXCOLOR COLOR_BLUE(D3DCOLOR_XRGB(0, 0, 255));
+const D3DXCOLOR COLOR_YELLOW(D3DCOLOR_XRGB(255, 255, 0));
+const D3DXCOLOR COLOR_CYAN(D3DCOLOR_XRGB(0, 255, 255));
+const D3DXCOLOR COLOR_MAGENTA(D3DCOLOR_XRGB(255, 0, 255));
+
+//
+// Materials
+//
+
+D3DMATERIAL9 InitMtrl(D3DXCOLOR ambient, D3DXCOLOR diffuse, D3DXCOLOR specular, D3DXCOLOR emissive, const float power);
+
+//const D3DMATERIAL9 MTRL_BLACK = InitMtrl(COLOR_BLACK, COLOR_BLACK, COLOR_BLACK, COLOR_BLACK, 8.0f);
+//const D3DMATERIAL9 MTRL_WHITE = InitMtrl(COLOR_WHITE, COLOR_WHITE, COLOR_WHITE, COLOR_BLACK, 8.0f);
+//const D3DMATERIAL9 MTRL_RED = InitMtrl(COLOR_RED, COLOR_RED, COLOR_RED, COLOR_BLACK, 8.0f);
+//const D3DMATERIAL9 MTRL_GREEN = InitMtrl(COLOR_GREEN, COLOR_GREEN, COLOR_GREEN, COLOR_BLACK, 8.0f);
+//const D3DMATERIAL9 MTRL_BLUE = InitMtrl(COLOR_BLUE, COLOR_BLUE, COLOR_BLUE, COLOR_BLACK, 8.0f);
+//const D3DMATERIAL9 MTRL_YELLOW = InitMtrl(COLOR_YELLOW, COLOR_YELLOW, COLOR_YELLOW, COLOR_BLACK, 8.0f);
+
+END

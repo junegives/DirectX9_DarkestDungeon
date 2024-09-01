@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{831a6e14-3b90-4eca-94ff-137476cf028e}</ProjectGuid>
+    <RootNamespace>Client</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../Bin\</OutDir>
+    <IncludePath>$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include;../../Fmod/inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(WindowsSDK_LibraryPath_x64);$(DXSDK_DIR)lib\x64;../../Fmod/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(WindowsSDK_LibraryPath_x86);$(DXSDK_DIR)lib\x86;$(LibraryPath)</LibraryPath>
+    <OutDir>../Bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../Header;../../Reference/Header</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../Reference/Library</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;System.lib;Utility.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../Header;../../Reference/Header</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;System.lib;Utility.lib;fmod_vc.lib;%(AdditionalDependencies);strmiids.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Reference/Library;../.../Fmod/lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);strmiids.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Header\Alien.h" />
+    <ClInclude Include="..\Header\AlienMob.h" />
+    <ClInclude Include="..\Header\BackGround.h" />
+    <ClInclude Include="..\Header\BattleHeroUI.h" />
+    <ClInclude Include="..\Header\BattleSystem.h" />
+    <ClInclude Include="..\Header\BoneCourtier.h" />
+    <ClInclude Include="..\Header\BoneDefender.h" />
+    <ClInclude Include="..\Header\BoneSoldier.h" />
+    <ClInclude Include="..\Header\Boss2.h" />
+    <ClInclude Include="..\Header\BossRoomDoor.h" />
+    <ClInclude Include="..\Header\BrigandBloodletter.h" />
+    <ClInclude Include="..\Header\BrigandCutthroat.h" />
+    <ClInclude Include="..\Header\Bullet1.h" />
+    <ClInclude Include="..\Header\Bullet2.h" />
+    <ClInclude Include="..\Header\Bullet3.h" />
+    <ClInclude Include="..\Header\CameraMgr.h" />
+    <ClInclude Include="..\Header\BrigandFusilier.h" />
+    <ClInclude Include="..\Header\Card.h" />
+    <ClInclude Include="..\Header\CardGame.h" />
+    <ClInclude Include="..\Header\BossMap.h" />
+    <ClInclude Include="..\Header\Description.h" />
+    <ClInclude Include="..\Header\DungeonStatus.h" />
+    <ClInclude Include="..\Header\Enums.h" />
+    <ClInclude Include="..\Header\EnvironmentObj.h" />
+    <ClInclude Include="..\Header\Creature.h" />
+    <ClInclude Include="..\Header\Define.h" />
+    <ClInclude Include="..\Header\Door.h" />
+    <ClInclude Include="..\Header\DungeonRoom.h" />
+    <ClInclude Include="..\Header\DungeonSystem.h" />
+    <ClInclude Include="..\Header\DynamicCamera.h" />
+    <ClInclude Include="..\Header\FireworkParticle.h" />
+    <ClInclude Include="..\Header\Gambling.h" />
+    <ClInclude Include="..\Header\GoodsUI.h" />
+    <ClInclude Include="..\Header\Guild.h" />
+    <ClInclude Include="..\Header\GuildNPC.h" />
+    <ClInclude Include="..\Header\Hero.h" />
+    <ClInclude Include="..\Header\HeroSkillUI.h" />
+    <ClInclude Include="..\Header\HeroStat.h" />
+    <ClInclude Include="..\Header\Highwayman.h" />
+    <ClInclude Include="..\Header\Inside.h" />
+    <ClInclude Include="..\Header\InteractionInfo.h" />
+    <ClInclude Include="..\Header\InteractionObj.h" />
+    <ClInclude Include="..\Header\Inventory.h" />
+    <ClInclude Include="..\Header\Item.h" />
+    <ClInclude Include="..\Header\Jester.h" />
+    <ClInclude Include="..\Header\Laser.h" />
+    <ClInclude Include="..\Header\Loading.h" />
+    <ClInclude Include="..\Header\LoadingBack.h" />
+    <ClInclude Include="..\Header\LoadingScreen.h" />
+    <ClInclude Include="..\Header\MainApp.h" />
+    <ClInclude Include="..\Header\MainLogo.h" />
+    <ClInclude Include="..\Header\Mob.h" />
+    <ClInclude Include="..\Header\Mob_Bullet.h" />
+    <ClInclude Include="..\Header\MouseCursor.h" />
+    <ClInclude Include="..\Header\Narration.h" />
+    <ClInclude Include="..\Header\Outside.h" />
+    <ClInclude Include="..\Header\PickingGame.h" />
+    <ClInclude Include="..\Header\PlayerFPSUI.h" />
+    <ClInclude Include="..\Header\PlayerProj.h" />
+    <ClInclude Include="..\Header\PuzzleHint.h" />
+    <ClInclude Include="..\Header\RuinDungeonDoor.h" />
+    <ClInclude Include="..\Header\Ruin_Curio_Armor.h" />
+    <ClInclude Include="..\Header\Ruin_Curio_Fountain.h" />
+    <ClInclude Include="..\Header\Ruin_Curio_Sarcophagus.h" />
+    <ClInclude Include="..\Header\Ruin_Curio_Sconce.h" />
+    <ClInclude Include="..\Header\Ruin_Curio_Statue.h" />
+    <ClInclude Include="..\Header\Ruin_Dungeon.h" />
+    <ClInclude Include="..\Header\Ruin_Obstacle.h" />
+    <ClInclude Include="..\Header\Ruin_SecretDoor.h" />
+    <ClInclude Include="..\Header\Ruin_Trap.h" />
+    <ClInclude Include="..\Header\SceneEvent.h" />
+    <ClInclude Include="..\Header\ScreenEffect.h" />
+    <ClInclude Include="..\Header\ShieldBreaker.h" />
+    <ClInclude Include="..\Header\SoundMgr.h" />
+    <ClInclude Include="..\Header\Spike.h" />
+    <ClInclude Include="..\Header\StageCoachHero.h" />
+    <ClInclude Include="..\Header\StatView.h" />
+    <ClInclude Include="..\Header\Sunken.h" />
+    <ClInclude Include="..\Header\TavernNPC.h" />
+    <ClInclude Include="..\Header\TavernUI.h" />
+    <ClInclude Include="..\Header\Tervarn.h" />
+    <ClInclude Include="..\Header\TextBoard.h" />
+    <ClInclude Include="..\Header\Trigger.h" />
+    <ClInclude Include="..\Header\Video.h" />
+    <ClInclude Include="..\Header\WealdDungeonDoor.h" />
+    <ClInclude Include="..\Header\Weald_Curio_Chest.h" />
+    <ClInclude Include="..\Header\Weald_Curio_Luggage.h" />
+    <ClInclude Include="..\Header\Weald_Curio_Spider.h" />
+    <ClInclude Include="..\Header\Weald_Curio_Tent.h" />
+    <ClInclude Include="..\Header\Weald_Dungeon.h" />
+    <ClInclude Include="..\Header\Monster.h" />
+    <ClInclude Include="..\Header\pch.h" />
+    <ClInclude Include="..\Header\Player.h" />
+    <ClInclude Include="..\Header\Skill.h" />
+    <ClInclude Include="..\Header\PlayerHand.h" />
+    <ClInclude Include="..\Header\SkyBox.h" />
+    <ClInclude Include="..\Header\StaticCamera.h" />
+    <ClInclude Include="..\Header\Terrain.h" />
+    <ClInclude Include="..\Header\Vestal.h" />
+    <ClInclude Include="..\Header\Wall.h" />
+    <ClInclude Include="..\Header\Village.h" />
+    <ClInclude Include="..\Header\Weald_Obstacle.h" />
+    <ClInclude Include="..\Header\Weald_Trap.h" />
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Code\Alien.cpp" />
+    <ClCompile Include="..\Code\AlienMob.cpp" />
+    <ClCompile Include="..\Code\BackGround.cpp" />
+    <ClCompile Include="..\Code\BattleHeroUI.cpp" />
+    <ClCompile Include="..\Code\BattleSystem.cpp" />
+    <ClCompile Include="..\Code\BoneCourtier.cpp" />
+    <ClCompile Include="..\Code\BoneDefender.cpp" />
+    <ClCompile Include="..\Code\BoneSoldier.cpp" />
+    <ClCompile Include="..\Code\Boss2.cpp" />
+    <ClCompile Include="..\Code\BossRoomDoor.cpp" />
+    <ClCompile Include="..\Code\BrigandBloodletter.cpp" />
+    <ClCompile Include="..\Code\BrigandCutthroat.cpp" />
+    <ClCompile Include="..\Code\BrigandFusilier.cpp" />
+    <ClCompile Include="..\Code\Bullet1.cpp" />
+    <ClCompile Include="..\Code\Bullet2.cpp" />
+    <ClCompile Include="..\Code\Bullet3.cpp" />
+    <ClCompile Include="..\Code\CameraMgr.cpp" />
+    <ClCompile Include="..\Code\Card.cpp" />
+    <ClCompile Include="..\Code\CardGame.cpp" />
+    <ClCompile Include="..\Code\BossMap.cpp" />
+    <ClCompile Include="..\Code\Creature.cpp" />
+    <ClCompile Include="..\Code\Description.cpp" />
+    <ClCompile Include="..\Code\Door.cpp" />
+    <ClCompile Include="..\Code\DungeonRoom.cpp" />
+    <ClCompile Include="..\Code\DungeonStatus.cpp" />
+    <ClCompile Include="..\Code\DungeonSystem.cpp" />
+    <ClCompile Include="..\Code\DynamicCamera.cpp" />
+    <ClCompile Include="..\Code\EnvironmentObj.cpp" />
+    <ClCompile Include="..\Code\FireworkParticle.cpp" />
+    <ClCompile Include="..\Code\Gambling.cpp" />
+    <ClCompile Include="..\Code\GoodsUI.cpp" />
+    <ClCompile Include="..\Code\Guild.cpp" />
+    <ClCompile Include="..\Code\GuildNPC.cpp" />
+    <ClCompile Include="..\Code\Hero.cpp" />
+    <ClCompile Include="..\Code\HeroSkillUI.cpp" />
+    <ClCompile Include="..\Code\HeroStat.cpp" />
+    <ClCompile Include="..\Code\Highwayman.cpp" />
+    <ClCompile Include="..\Code\Inside.cpp" />
+    <ClCompile Include="..\Code\InteractionInfo.cpp" />
+    <ClCompile Include="..\Code\InteractionObj.cpp" />
+    <ClCompile Include="..\Code\Inventory.cpp" />
+    <ClCompile Include="..\Code\Item.cpp" />
+    <ClCompile Include="..\Code\Jester.cpp" />
+    <ClCompile Include="..\Code\Laser.cpp" />
+    <ClCompile Include="..\Code\Loading.cpp" />
+    <ClCompile Include="..\Code\LoadingBack.cpp" />
+    <ClCompile Include="..\Code\LoadingScreen.cpp" />
+    <ClCompile Include="..\Code\MainApp.cpp" />
+    <ClCompile Include="..\Code\MainLogo.cpp" />
+    <ClCompile Include="..\Code\Mob.cpp" />
+    <ClCompile Include="..\Code\Mob_Bullet.cpp" />
+    <ClCompile Include="..\Code\MouseCursor.cpp" />
+    <ClCompile Include="..\Code\Narration.cpp" />
+    <ClCompile Include="..\Code\Outside.cpp" />
+    <ClCompile Include="..\Code\PickingGame.cpp" />
+    <ClCompile Include="..\Code\PlayerFPSUI.cpp" />
+    <ClCompile Include="..\Code\PlayerProj.cpp" />
+    <ClCompile Include="..\Code\PuzzleHint.cpp" />
+    <ClCompile Include="..\Code\RuinDungeonDoor.cpp" />
+    <ClCompile Include="..\Code\Ruin_Curio_Armor.cpp" />
+    <ClCompile Include="..\Code\Ruin_Curio_Fountain.cpp" />
+    <ClCompile Include="..\Code\Ruin_Curio_Sarcophagus.cpp" />
+    <ClCompile Include="..\Code\Ruin_Curio_Sconce.cpp" />
+    <ClCompile Include="..\Code\Ruin_Curio_Statue.cpp" />
+    <ClCompile Include="..\Code\Ruin_Dungeon.cpp" />
+    <ClCompile Include="..\Code\Ruin_Obstacle.cpp" />
+    <ClCompile Include="..\Code\Ruin_SecretDoor.cpp" />
+    <ClCompile Include="..\Code\Ruin_Trap.cpp" />
+    <ClCompile Include="..\Code\SceneEvent.cpp" />
+    <ClCompile Include="..\Code\ScreenEffect.cpp" />
+    <ClCompile Include="..\Code\ShieldBreaker.cpp" />
+    <ClCompile Include="..\Code\SoundMgr.cpp" />
+    <ClCompile Include="..\Code\Spike.cpp" />
+    <ClCompile Include="..\Code\StageCoachHero.cpp" />
+    <ClCompile Include="..\Code\StatView.cpp" />
+    <ClCompile Include="..\Code\Sunken.cpp" />
+    <ClCompile Include="..\Code\TavernNPC.cpp" />
+    <ClCompile Include="..\Code\TavernUI.cpp" />
+    <ClCompile Include="..\Code\Tervarn.cpp" />
+    <ClCompile Include="..\Code\TextBoard.cpp" />
+    <ClCompile Include="..\Code\Trigger.cpp" />
+    <ClCompile Include="..\Code\Video.cpp" />
+    <ClCompile Include="..\Code\WealdDungeonDoor.cpp" />
+    <ClCompile Include="..\Code\Weald_Curio_Chest.cpp" />
+    <ClCompile Include="..\Code\Weald_Curio_Luggage.cpp" />
+    <ClCompile Include="..\Code\Weald_Curio_Spider.cpp" />
+    <ClCompile Include="..\Code\Weald_Curio_Tent.cpp" />
+    <ClCompile Include="..\Code\Weald_Dungeon.cpp" />
+    <ClCompile Include="..\Code\Monster.cpp" />
+    <ClCompile Include="..\Code\Player.cpp" />
+    <ClCompile Include="..\Code\Skill.cpp" />
+    <ClCompile Include="..\Code\PlayerHand.cpp" />
+    <ClCompile Include="..\Code\SkyBox.cpp" />
+    <ClCompile Include="..\Code\StaticCamera.cpp" />
+    <ClCompile Include="..\Code\Terrain.cpp" />
+    <ClCompile Include="..\Code\Vestal.cpp" />
+    <ClCompile Include="..\Code\Wall.cpp" />
+    <ClCompile Include="..\Code\Village.cpp" />
+    <ClCompile Include="..\Code\Weald_Obstacle.cpp" />
+    <ClCompile Include="..\Code\Weald_Trap.cpp" />
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Client.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
